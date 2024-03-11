@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="card-inscricao">
+            <h2>Formulário de Inscrição</h2>
+            <form onsubmit="enviaFormulario(event)">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome">
+                <label for="email">Endereço de Email</label>
+                <input type="email" name="email" id="">
+                <label for="tipo">Tipo de Inscrição</label>
+                <select name="tipo" id="">
+                    <option value="Participante">Participante</option>
+                    <option value="Palestrante">Palestrante</option>
+                    <option value="Voluntário">Voluntário</option>
+                </select>
+                <div id="div-termos">
+                    <input type="checkbox" name="termos" class="termos">
+                    <label for="termos" class="termos">Aceito os termos e condições</label>
+                </div>
+                <input type="submit" value="Inscrever-se" class="submit">
+            </form>
+        </div>
+        <div class="card-inscricao">
+            <h2>Programação das Palestras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="borda-meio" id="horario">Horário</th>
+                        <th class="borda-meio">Título da palestra</th>
+                        <th class="borda-meio">Palestrante</th>
+                        <th id="acao">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 10:00</td>
+                        <td>Inovação em Tecnologia</td>
+                        <td>João Silva</td>
+                        <td><button onclick="enviaFormulario(event)">Mais informações</button></td>
+                    </tr>
+                    <tr>
+                        <td>10:15 - 11:15</td>
+                        <td>O futuro da Web</td>
+                        <td>Maria Fernandes</td>
+                        <td><button onclick="enviaFormulario(event)">Mais informações</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div id="div-inativa">
+        <h3>Botão meramente ilustrativo</h3>
+    </div>
+</body>
+</html>

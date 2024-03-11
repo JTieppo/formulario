@@ -1,0 +1,16 @@
+{
+    "name": "front-atvd2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev":"lite-server"
+    },
+    "lite-server": {
+        "port": 3000,
+        "files": ["*.html", "*.css", "*.js"],
+        "server": { "baseDir": "./" }
+    },
+    "author": "",
+    "license": "ISC"
+}
